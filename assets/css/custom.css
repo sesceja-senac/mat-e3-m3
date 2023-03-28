@@ -297,3 +297,30 @@ span.negrito {
 .caixa p {
     margin-bottom: 10px;
 }
+.after-1 {position: relative;}
+.after-1::after {
+    content: '';
+    position: absolute;
+    right: -380px;
+    bottom: 4px;
+    background-image: url('../design/pg1/elemento_2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 380px;
+}
+.after-2 {position: relative;}
+.after-2::after {
+    content: '';
+    position: absolute;
+    left: -450px;
+    bottom: 85px;
+    background-image: url('../design/pg1/elemento_3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 380px;
+}
+.img-pratica {
+    margin-top: -60px;
+}
