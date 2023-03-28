@@ -1,0 +1,299 @@
+.bg-1 {
+    background-image: url('../design/pg1/background_escuro.png');
+    position: relative;
+}
+.bg-1 .container {
+    background-color: transparent;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.bg-1 h2 {
+    color: #c78023;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.bg-2 {
+    background-image: url('../design/pg1/background_claro.png');
+    background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.bg-2 .container {
+    background-color: transparent;
+}
+.pagina-3 .bg-2 {
+    background-attachment: fixed;
+}
+/* rellax imgs */
+.rellax {position: absolute;}
+.rellax-1 {
+    right: 80px;
+    width: 800px;
+}
+.rellax-2 {
+    right: 0;
+    top: 5100px;
+}
+.rellax-3 {
+    top: 6000px;
+}
+.rellax-4 {
+    right: 0;
+    top: 6500px;
+}
+.rellax-5 {
+    top: 7300px;
+}
+.jornal {
+    background-image: url('../design/pg1/jornal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 120px 0 90px;
+    height: 1067px;
+    color: black;
+    display: block;
+    margin: 40px auto;
+}
+.jornal h3, .jornal-2 h3 {
+    color: #498080;
+    font-size: 20px;
+    text-align: center;
+}
+.jornal-2 {
+    border: 2px solid #498080;
+    padding: 15px 25px;
+    background-color: white;
+    display: block;
+    margin: 40px auto;
+    box-shadow: 3px 3px 5px #333;
+}
+.t-center {text-align: center;}
+video {background-color: #333; display: block; margin: 40px auto; height: 320px;}
+figure {margin-top: 40px;} figcaption {margin-bottom: 40px;}
+.p-b {padding-bottom: 60px;} .p-t {padding-top: 60px;}
+.refs {
+    background-image: url('../design/refs/background.png');
+    background-attachment: fixed;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.refs .container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.row-quadros {
+    display: flex;
+    justify-content: center;
+    padding-top: 170px;
+}
+.img_quadro {
+    max-width: 25%;
+    height: auto;
+    align-self: center;
+}
+.img_quadro:nth-child(2){
+    margin-top: -200px;
+}
+.tooltip-link {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px dashed #333;
+    font-size: 18px;
+}
+.tooltip-link:hover {
+    color: inherit;
+}
+.tooltip-inner {
+    max-width: 400px;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px;
+}
+.caixa {
+    background-color: #498080;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px #333;
+}
+.caixa p {
+    color: white;
+}
+.caixa.icone {
+    padding: 20px;
+    padding-left: 60px;
+}
+.caixa.icone::before {
+    background-color: transparent;
+}
+table.sesc {
+    margin: 20px auto;
+    width: auto;
+}
+.custom_row {
+    display: flex;
+    justify-content: space-around;
+}
+.custom_row li img {
+    height: 50px;
+    width: auto;
+    margin-left: 20px;
+}
+.custom_row li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+}
+.bg-1 .enunciado {
+    color: white;
+}
+.espera {
+    display: block;
+    height: 320px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    background-color: #333;
+    margin: 40px auto;
+    color: wheat;
+}
+.bg-1 .feedbacks p{
+    background-color: white;
+    width: fit-content;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 4px #333;
+}
+.vermelho {
+    color: #e7a231;
+    font-weight: 600;
+    font-size: 18px;
+}
+.verde {
+    color: #6b8a49;
+    font-weight: 600;
+    font-size: 18px;
+}
+.vermelho i, .verde i {
+    font-style: normal;
+    font-size: 26px;
+}
+span.negrito {
+    font-size: 26px;
+    font-weight: 600;
+}
+.divisoria-1 {
+    background-image: url('../design/pg1/paralaxe.png');
+    background-attachment: fixed;
+    height: 450px;
+    width: 100%;
+}
+.divisoria-2 {
+    background-image: url('../design/pg2/paralaxe.png');
+    background-attachment: fixed;
+    height: 450px;
+    width: 100%;
+}
+.esquemaDaBru table.sesc {
+    min-width: 200px;
+}
+/* caixa expansivel */
+.caixa-container {
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+.caixa-exp {
+    max-height: 200px;
+    overflow: hidden;
+    width: 100%;
+    margin: 40px auto;
+    transition-duration: .7s;
+    position: relative;
+    background-color: #2d5054;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding-top: 60px;
+    box-shadow: 2px 2px 4px black;
+}
+.caixa-exp.aberta {
+    max-height: 1900px; 
+}
+.caixa-container button {
+    content: '';
+    background-image: url('../design/pg3/ico_saibamais_abre.png');
+    background-size: contain;
+    background-position: center;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    background-color: transparent;
+    border: none;
+}
+.caixa-container button:hover {
+    transform: translateX(-50%) scale(1.03);
+}
+.caixa-container.saiba-mais::before {
+    content: '';
+    background-image: url('../design/pg3/ico_saiba_mais.png');
+    background-size: 100%;
+    width: 152px;
+    height: 152px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 15;
+}
+.renda-bg {
+    background-color: #498080;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 4px 4px 6px #333;
+    margin: 40px auto;
+}
+.p-reset div {
+    padding-left: 0;
+    padding-right: 0;
+}
+.enunciado-img {
+    margin-left: -200px;
+    float: left;
+}
+.table_icon {
+    height: 50px;
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+.icone.pergunta::before {
+    background-image: url('../design/pg1/ico_pergunta.png');
+    background-size: contain;
+    height: 125px;
+    width: 125px;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.caixa.icone {
+    padding-left: 80px;
+    padding-right: 40px;
+    line-height: 22px;
+}
+.caixa p {
+    margin-bottom: 10px;
+}
