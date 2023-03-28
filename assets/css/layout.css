@@ -794,4 +794,8 @@ footer.container {
 .visitada a {
     opacity: 0.8;
     background-color: rgba(221, 221, 221);
-  }
+}
+.pagination .active {
+    transform: translateY(-8px);
+    pointer-events:none;
+}

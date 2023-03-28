@@ -324,3 +324,7 @@ span.negrito {
 .img-pratica {
     margin-top: -60px;
 }
+.materia h3 {text-align: center; color: white; font-size: 28px;}
+.materia {
+    margin-bottom: 40px;
+}
