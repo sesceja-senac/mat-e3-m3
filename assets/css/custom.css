@@ -47,6 +47,70 @@
 .rellax-5 {
     top: 7300px;
 }
+.rellax-6 {
+    top: 400px;
+}
+.rellax-7 {
+    right: 0;
+    top: 1200px;
+}
+.rellax-8 {
+    top: 1650px;
+    max-width: 450px;
+}
+.rellax-9 {
+    right: 0;
+    top: 0;
+    max-width: 450px;
+}
+.rellax-10 {
+    top: 400px;
+}
+.rellax-11 {
+    top: 1850px;
+    max-width: 450px;
+}
+.rellax-12 {
+    top: 3250px;
+    right: 0;
+    max-width: 450px;
+}
+.rellax-13 {
+    top: 4250px;
+    max-width: 450px;
+}
+.rellax-14 {
+    top: 900px;
+}
+.rellax-15 {
+    right: 0;
+    top: 1420px;
+}
+.rellax-16 {
+    top: 2450px;
+    right: 0;
+    max-width: 450px;
+}
+.rellax-17 {
+    top: 3650px;
+    max-width: 450px;
+}
+.elemento-pg4 {
+    right: 0;
+    top: 0;
+    max-width: 500px;
+    z-index: 1;
+}
+.h2-estilo {
+    color: #498080;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.texto-destaque {
+    font-size: 22px;
+    text-align: center;
+    margin: 40px 0;
+}
 .jornal {
     background-image: url('../design/pg1/jornal.png');
     background-repeat: no-repeat;
@@ -199,6 +263,23 @@ span.negrito {
     height: 450px;
     width: 100%;
 }
+.divisoria-3 {
+    background-image: url('../design/pg3/paralaxe.png');
+    background-attachment: fixed;
+    height: 450px;
+    width: 100%;
+}
+.divisoria-4 {
+    background-image: url('../design/pg4/paralaxe.png');
+    background-attachment: fixed;
+    height: 450px;
+    width: 100%;
+}
+.elemento-pg2 {
+    right: 0;
+    top: 0;
+    max-height: 750px;
+}
 .esquemaDaBru table.sesc {
     min-width: 200px;
 }
@@ -327,4 +408,34 @@ span.negrito {
 .materia h3 {text-align: center; color: white; font-size: 28px;}
 .materia {
     margin-bottom: 40px;
+}
+.btn-modal {
+    width: 159px;
+    height: 139px;
+    display: block;
+    margin: 40px auto;
+    background-image: url('../design/pg3/btn_1.png');
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+.btn-modal:hover {
+    background-image: url('../design/pg3/btn_1_hover.png');
+}
+
+@media (max-width:900px){
+    .row-quadros {
+        flex-direction: column;
+        padding-top: 45px;
+
+    }
+    .img_quadro {
+        margin-top: unset;
+        max-width: 500px;
+        
+      }
+      .img_quadro:nth-child(2){margin-top: unset;}
+      .jornal {line-height: 1.3rem;}
+      .bg-2 {background-attachment: unset;}
+      .after-1::after, .after-2::after {display: none;}
 }
