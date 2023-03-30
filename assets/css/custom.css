@@ -444,6 +444,30 @@ span.negrito {
     line-height: 1.3rem;
     max-width: 100%;
 }
+@media (max-width:1660px){
+    .pagina {overflow-x: hidden;}
+    .rellax-1 {
+        max-width: 590px;
+        width: auto;
+    }
+    .rellax-2, .rellax-3, .rellax-4, .rellax-5, .rellax-6, .rellax-7, .rellax-8, .rellax-10, .rellax-11, .rellax-12, .rellax-13, .rellax-14, .rellax-15, .rellax-16, .rellax-17 {
+        max-width: 200px;
+    }
+    .elemento-pg2, .rellax-9, .elemento-pg4 {
+        max-width: 15%;
+    }
+}
+@media (max-width: 1440px) {
+    .after-1::after, .after-2::after {
+        max-width: 400px;
+    }
+    .after-1::after {
+        right: -280px;
+    }
+    .after-2::after {
+        left: -290px;
+    }
+}
 @media (max-width:900px){
     .row-quadros {
         flex-direction: column;
