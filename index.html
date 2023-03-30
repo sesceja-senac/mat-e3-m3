@@ -8,18 +8,42 @@
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/tela_inicial.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
     <title>Tela inicial</title>
 </head>
 <body>
-    <div class="container pt-4">
-        
+    <div class="preloader">
+        <div class="anim"></div>
+        <h1>Aguarde enquanto o conteúdo é carregado.</h1>
     </div>
-   
+    <div id="wrapper">
+        <img src="assets/design/tela_inicial/titulo.png" alt="" class="titulo">
+        <img src="assets/design/tela_inicial/logo_matematica.png" alt="" class="titulo-2">
+        <img src="assets/design/tela_inicial/logo_sesc.png" alt="" class="logo">
+        <img src="assets/design/tela_inicial/elemento_central.png" alt="" class="img-1">
+        <img src="assets/design/tela_inicial/elemento_lateral_1.png" alt="" class="img-2">
+        <img src="assets/design/tela_inicial/elemento_lateral_2.png" alt="" class="img-3">
+        <a href="conteudo/index.html" class="iniciar"></a>
+    </div>
+    <div class="backdrop">
+        <div class="modal-video">
+            <div class="wrapper">
+                <button id="fechar-video">X</button>
+                <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir:</p>
+                <iframe src="https://www.youtube.com/embed/5ck4nXHbmWI" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
     <!--Jquery-->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/geral.js"></script>
+    <script src="assets/js/tela_inicial.js"></script>
     
 </body>
 

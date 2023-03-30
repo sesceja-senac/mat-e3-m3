@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-image: url('../design/tela_inicial/background.png');
+    padding-top: 40px;
+    position: relative;
+}
+.img-1 {
+    display: block;
+    margin: auto;
+    position: relative;
+    
+}
+.img-2, .img-3 {
+    position: absolute;
+}
+.img-2 {
+    left: 18%;
+    top: 55%;
+    transform: translateY(-50%);
+}
+.img-3 {
+    right: 18%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+.titulo {
+    position: absolute;   
+    left: 35px;
+}
+.iniciar {
+    width: 181px;
+    height: 181px;
+    background-image: url('../design/tela_inicial/btn_hover_scale.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+.iniciar:hover {
+    transform: translateY(-50%) scale(1.04);
+}
+.titulo-2 {
+    left: 20px;
+    bottom: 0;
+    position: absolute;
+    width: 350px;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.backdrop {
+    background-color: rgba(55,55,55, .8);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.modal-video {
+    background-image: url('../design/tela_inicial/Video-apresentacao-gd.png');
+    width: 1133px;
+    height: 708px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 260px;
+    padding-top: 120px;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modal-video iframe {
+    height: 300px;
+    width: 600px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+#fechar-video {
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 2px 2px 3px #333;
+    transition-duration: .3s;
+}
+#fechar-video:hover {
+    background-color: #ff8b01;
+    color: white;
+    transition-duration: .3s;
+}
+
+
+@media (max-width:1800px){
+    .titulo {
+        width: 30%;
+    }
+    .img-1 {
+        width: 50%;
+    }
+    .img-2, .img-3 {
+        width: 12%;
+    }
+}
+@media (max-width:1500px){
+    .img-1 {
+        margin-top: 50px;
+    }
+    .img-2 {
+        left: 22%;
+    }
+    .img-3 {
+        right: 22%;
+    }
+    .iniciar {
+        right: 8%;
+    }
+}
+@media (max-width:1000px){
+    .img-1 {
+        width: 90%;
+        margin: 120px auto 0 auto;
+    }
+    .iniciar {
+        bottom: 90px;
+        top: unset;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .titulo {
+        width: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .img-2 {
+        left: 0;
+        top: 45%;
+        width: 150px;
+    }
+    .img-3 {
+        top: 40%;
+        width: 150px;
+        right: 0;
+    }
+    .modal-video {
+        width: 100%;
+        padding: 100px 150px;
+        /* text-align: center; */
+    }
+    .modal-video iframe {
+        width: 360px;
+        height: 240px;
+        display: block;
+        margin: 10px auto;
+    }
+    #fechar-video {
+        top: 50px;
+        right: 130px;
+    }
+}
+@media (max-width:600px){
+    .logo {
+        bottom: 20px;
+        top: unset;
+        width: 80px;
+    }
+    .img-1 {
+        width: 100%;
+        margin: 90px 0 0 0;
+    }
+    .img-2 {
+        left: 0;
+        display: none;
+    }
+    .img-3 {
+        left: 0;
+        display: none;
+    }
+    .titulo {
+        width: 250px;
+        left: 50%;
+    }
+    .iniciar {
+        left: 50%;
+        bottom: unset;
+        top: 55%;
+    }
+    .titulo-2 {
+        width: 250px;
+    }
+    .modal-video {
+        width: 100%;
+        background-color: #007981;
+        background-image: unset;
+        padding: 15px;
+        height: auto;
+        text-align: center;
+        position: relative;
+        transform: unset;
+        left: unset;
+        top: unset;
+    }
+    .modal-video iframe {
+        display: block;
+        margin: 15px auto;
+        margin-bottom: 40px;
+    }
+    #fechar-video {
+        top: -20px;
+        right: 20px;
+    }
+    .backdrop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
