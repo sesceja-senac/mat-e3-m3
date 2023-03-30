@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/fa/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/template.css">
     <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/drag/js/dragula.css">
+    <link rel="stylesheet" href="../assets/drag/css/game-custom.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
 
     <link rel="stylesheet" href="../assets/print/print.css">
@@ -119,7 +121,7 @@
                             <figure class="after-2" data-aos="zoom-in">
                                 <img src="../assets/design/pg1/figura_2.png" class="img-fluid d-block mx-auto">
                                 <figcaption>Figura 2 - Primeiro balanço da coleta <br>
-                                    Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34728-censo-2022-ja-contou-quase-60-milhoes-de-pessoas-no-pais#:~:text=IBGE%20divulga%20primeiro%20balan%C3%A7o%20da,contadas%20em%2020.290.359%20domic%C3%ADlios. </figcaption>
+                                    Fonte: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/34728-censo-2022-ja-contou-quase-60-milhoes-de-pessoas-no-pais. </figcaption>
                                     <div class="visually-hidden">
                                         <p>A figura mostra um gráfico de barras horizontais mostrando a porcentagem da população do Brasil por estado que já foi pesquisada no censo de dois mil e vinte e dois, Primeiro balanço da coleta sobre a distribuição da população recenseada por unidade de federação, São Paulo apresenta quinze vírgula cinquenta por cento da população já pesquisada, Minas gerais dez vírgula três, Bahia oito vírgula noventa, Rio de janeiro oito vírgula zero três,  Pernambuco seis vírgula trinta , Ceará cinco vírgula treze,  Paraná quatro vírgula noventa e dois, Maranhão quatro vírgula oitenta e oito, Pará quatro vírgula quarenta e três, Rio grande do Sul quatro vírgula vinte e oito, Goiás dois vírgula noventa e quatro, Paraíba dois vírgula setenta e um, Santa Catarina dois vírgula sessenta e sete, Amazonas dois vírgula quarenta, Rio grande do Norte dois vírgula trinta e oito,  Piauí dois vírgula trinta e quatro, Alagoas dois vírgula dezenove, Distrito Federal um vírgula setenta, Sergipe um vírgula sessenta e oito,  Espírito Santo um vírgula sessenta e um, Mato Grosso do Sul um vírgula zero três, Mato Grosso um vírgula zero um, Rondônia zero vírgula oitenta e cinco, Tocantins zero vírgula setenta e seis, Acre zero vírgula quarenta e um, Amapá zero vírgula trinta e sete e  Roraima zero vírgula vinte e quatro.</p>
                                     </div>
@@ -439,9 +441,37 @@
                                 <p>Existem diferentes tipos de médias. Além da média que estudamos, podemos citar a média aritmética ponderada. Você sabe o que é média aritmética ponderada? A média ponderada leva em consideração a frequência que os dados aparecem em um levantamento de dados. Ela é utilizada quando existem repetições de um mesmo dado por um determinado número de vezes, em que o mesmo dado aparece duas vezes ou várias vezes. Para não o repetir, gerando uma enorme tabela, acumulamos ele em um único dado.</p>  
                                 <p>Em casos de cálculos com média aritmética ponderada, podemos atribuir pesos a esses dados, ou seja, determinar que um dado tenha valor maior que o outro, impactando diretamente no cálculo. No cálculo da média ponderada, o dado será multiplicado pelo número de vezes que aparece ou pelo peso a ele atribuído, e posteriormente dividido pela soma das repetições ou dos pesos. </p> 
                                 <p>Para ficar mais claro, observe o exemplo a seguir. Em uma determinada empresa, o gerente organizou, em uma planilha, os salários dos funcionários, visando encontrar a média salarial paga pela empresa no ano de 2022. A tabela ficou da seguinte forma:</p>
-                                <h4>!! tabela</h4>
                                 <table class="sesc">
-    
+                                    <tr>
+                                        <th>Função </th>
+                                        <th>Quantidade de funcionários </th>
+                                        <th>Salário </th>
+                                    </tr>
+                                    <tr>
+                                        <td>Vendedor </td>
+                                        <td>9 </td>
+                                        <td>R$ 1.700,00 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estoquista </td>
+                                        <td>4 </td>
+                                        <td>R$ 1.502,75 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Recepcionista </td>
+                                        <td>2 </td>
+                                        <td>R$ 1.340,15 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Serviços gerais </td>
+                                        <td>3 </td>
+                                        <td>R$ 1.258,66 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gerente </td>
+                                        <td>1 </td>
+                                        <td>R$ 3.085,00 </td>
+                                    </tr>
                                 </table>
                                 <p>Na tabela, estão listados a quantidade de funcionários e os seus respectivos salários. Podemos observar que a função com maior número de funcionários é vendedor, logo esse salário de R$ 1.700,00 terá um maior impacto no cálculo quando multiplicado pela quantidade de funcionários. Veja como: </p>
                                 <figure>
@@ -512,7 +542,20 @@
                             <h2 class="vamos-praticar">Vamos praticar!</h2>
                             <div class="esquemaDaBru">
                                 <p class="enunciado" tabindex="0">1. A professora de matemática, da cidade de Calculópolis, promoveu uma saída de estudo de um grupo de estudantes. O grupo fará uma visita guiada a dois museus da capital do estado onde residem. Ao agendar com os responsáveis dos museus, perguntaram qual era a idade média do grupo. Logo, a professora anotou as idades de dez estudantes e realizou o cálculo. </p>
-                                <h4>!! infos ?</h4>
+                                <div class="info-exercicio">
+                                    <p>
+                                        Lucas - 13 anos<br>
+                                        Frederico - 14 anos<br>
+                                        Isadora - 14 anos<br>
+                                        Pedro Henrique - 16 anos<br>
+                                        Francisca - 16 anos<br>
+                                        Maria Eduarda - 15 anos<br>
+                                        Davi - 14 anos<br>
+                                        Juliana - 16 anos<br>
+                                        Joana - 16 anos<br>
+                                        Arthur - 16 anos
+                                    </p>
+                                </div>
                                 <p class="enunciado">
                                     Assinale a opção que corresponde ao resultado encontrado pela professora e informado ao responsável dos museus.
                                 </p>
@@ -597,7 +640,7 @@
                             Fonte: Sesc EAD EJA (2023) </figcaption>
                     </figure>
                     <p>Observando o gráfico de dispersão, podemos ver que a idade que mais se dispersa da média é a idade da avó Silva, que é a integrante com a idade mais avançada da família. Esses desvios que existem em relação ao valor médio, ou seja, a média aritmética, são chamados de desvio. O desvio é uma medida estatística que nos possibilita saber a distância de cada um dos dados numéricos até a média. Para encontrarmos essa distância, precisamos subtrair cada um dos dados do valor da média aritmética. Exemplificando com as idades da família Silva, temos: </p>
-                    <h4>!! gif</h4>
+                    <img src="" alt="GIF AUDIOVISUAL">
                     <p class="visually-hidden">
                         Média aritmética: 35,66 anos <br><br>
                         Desvio das idades: <br>
@@ -609,7 +652,7 @@
                         Idade 6: 73 - 35,66 = 37,34
                     </p>
                     <p>Observando os dados inseridos na reta numérica, podemos observar a distância de cada dado em relação à média. Veja a seguir. </p>
-                    <h4>!! gif</h4>
+                    <img src="" alt="GIF AUDIOVISUAL">
                     <p>Já estudamos outras formas de cálculos estatísticos, como amplitude e desvio, agora veremos o <b>desvio padrão</b>. O <b>desvio padrão</b> mede a dispersão dos dados, ou seja, o quanto eles estão longe ou perto da média. Quanto maior for o valor do desvio padrão de um conjunto de dados, mais dispersos eles estão. Veja no gráfico a seguir. </p>
                     <figure>
                         <img data-aos="zoom-in" src="../assets/design/pg4/figura_13.png" class="img-fluid d-block mx-auto" alt="Gráfico em que a dispersão dos dados em azul é maior que a dispersão dos dados em verde, em relação ao ponto médio, representada na imagem por uma linha pontilhada. Nos valores dos desvios, apontados no lado esquerdo da imagem, o valor do desvio padrão da região azul é maior que o valor do desvio padrão da região verde.">
@@ -688,7 +731,125 @@
                                 <p class="f-negativo text-danger  mt-2 mb-2 animate__animated animate__shakeX" style="display: none;"><i class="fas fa-times"></i> Resposta incorreta! Essa é a definição de média aritmética.</p>
                             </div>
                         </div>
-                        <h4>!! exercicios tabelas pg43</h4>
+                        
+                        <div class="container-fluid game-body no-print" style="padding:0;">
+                            <div class="row">
+                                <div class="col-10 align-self-start d-block m-auto">
+                                    <div class="row game-descricao-img"><img src="img/pg2-praticar2-ico.png" style="width: 150px;" alt=""></div>
+                                    <div class="row game-descricao">
+                                        <p>2. Arraste as informações que completam o quadro a seguir. </p>
+                                    </div>
+                                </div>
+                                <div id="slots" class="col-12 ">
+                                    <br>
+                                    <div class="row">
+                                        <div class="table-responsive">
+                                            <table class="sesc">
+                                                <tr>
+                                                    <th>Grupo de dados numéricos </th>
+                                                    <th>Amplitude </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>20, 18, 14, 15 </td>
+                                                    <td id="slot-4"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>42, 27, 12, 19, 55 </td>
+                                                    <td id="slot-1"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>107, 108, 109, 108 </td>
+                                                    <td id="slot-2"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>18, 25, 32, 22, 18 </td>
+                                                    <td id="slot-3"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                
+                                <div id="cardPile" class="game-itens-container">
+                                    <div id="card-2" class="slot-2" data-target="slot-2">
+                                        <button type="button" class="btn btn-secondary">2</button>
+                                    </div>
+                                    <div id="card-4" class="slot-4" data-target="slot-4">
+                                        <button type="button" class="btn btn-secondary">6</button>
+                                    </div>
+                                    <div id="card-3" class="slot-3" data-target="slot-3">
+                                        <button type="button" class="btn btn-secondary">14</button>
+                                    </div>
+                                    <div id="card-1" class="slot-9 slot-1" data-target="slot-9">
+                                        <button type="button" class="btn btn-secondary">43</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="enunciado mt-5">3. Cinco atletas participaram de uma prova de salto a distância. Cada atleta saltou quatro vezes. Na tabela a seguir, são apresentadas as distâncias, a média e o desvio padrão, em metros, obtidos nos saltos de cada atleta. </p>
+                            <table class="sesc">
+                                <tr>
+                                    <th>Atleta </th>
+                                    <th>Distância </th>
+                                    <th>Média aritmética (aproximada) </th>
+                                    <th>Desvio padrão (aproximado) </th>
+                                </tr>
+                                <tr>
+                                    <td>Tatiana</td>
+                                    <td>2,8; 2,2; 3,1; 2,5 </td>
+                                    <td>2,65 </td>
+                                    <td>0,36 </td>
+                                </tr>
+                                <tr>
+                                    <td>Cristina </td>
+                                    <td>3,2; 2,5; 2,8; 3,0 </td>
+                                    <td>2,9 </td>
+                                    <td>0,26 </td>
+                                </tr>
+                                <tr>
+                                    <td>Carina </td>
+                                    <td>2,9; 2,8; 3,0; 2,8 </td>
+                                    <td>2,9 </td>
+                                    <td>0,09 </td>
+                                </tr>
+                                <tr>
+                                    <td>Luciana </td>
+                                    <td>3,1; 3,2; 3,1; 2,7 </td>
+                                    <td>3,0 </td>
+                                    <td>0,2 </td>
+                                </tr>
+                                <tr>
+                                    <td>Juliana </td>
+                                    <td>2,8; 3,2; 3,4; 2,1 </td>
+                                    <td>2,9 </td>
+                                    <td>0,46 </td>
+                                </tr>
+                            </table>
+                            <p class="enunciado">Selecione a resposta que corresponde a cada pergunta.</p>
+                        
+                        <div class="esquemaDaBru ">
+                            <p class="enunciado">a) Qual atleta teve o desempenho mais homogêneo? Carina </p>                            
+                                <div class="esquema-flex">
+                                    <button class="alt-e btn-sesc" title="alternativa: ">a) Tatiana</button>
+                                    <button class="alt-c btn-sesc" title="alternativa: ">b) Cristina</button>
+                                    <button class="alt-e btn-sesc" title="alternativa: ">c) Carina</button>
+                                    <button class="alt-e btn-sesc" title="alternativa: ">d) Luciana</button>
+                                    <button class="alt-e btn-sesc" title="alternativa: ">e) Juliana</button>
+                                </div>
+                        </div>
+                        <div class="esquemaDaBru ">
+                            <p class="enunciado">a) Qual atleta teve o desempenho mais homogêneo? Carina </p>
+                            <div class="esquema-flex">
+                                <button class="alt-e btn-sesc" title="alternativa: ">a) Tatiana</button>
+                                <button class="alt-e btn-sesc" title="alternativa: ">b) Cristina</button>
+                                <button class="alt-e btn-sesc" title="alternativa: ">c) Carina</button>
+                                <button class="alt-e btn-sesc" title="alternativa: ">d) Luciana</button>
+                                <button class="alt-c btn-sesc" title="alternativa: ">e) Juliana</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="divisoria-4"></div>
@@ -770,6 +931,8 @@
     <script src="../assets/js/geral.js"></script>
     <script src="../assets/js/rellax.min.js"></script>
     <script>var rellax=new Rellax('.rellax');</script>
+    <script src="../assets/drag/js/dragula.js"></script>
+    <script src="../assets/drag/js/game-custom.js"></script>
     <script src="../assets/js/script.js"></script>
 
  <!-- Versao atual do handtalk -->

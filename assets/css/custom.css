@@ -135,7 +135,7 @@
     box-shadow: 3px 3px 5px #333;
 }
 .t-center {text-align: center;}
-video {background-color: #333; display: block; margin: 40px auto; height: 320px;}
+video {background-color: #333; display: block; margin: 40px auto; height: 320px; max-width: 100%;}
 figure {margin-top: 40px;} figcaption {margin-bottom: 40px;}
 .p-b {padding-bottom: 60px;} .p-t {padding-top: 60px;}
 .refs {
@@ -422,7 +422,28 @@ span.negrito {
 .btn-modal:hover {
     background-image: url('../design/pg3/btn_1_hover.png');
 }
-
+.esquema-flex {
+    display: flex; 
+    align-items: center;
+}
+.esquema-flex button.btn-sesc {
+    width: auto; 
+    display: block; 
+    margin: 10px 15px;
+}
+.info-exercicio {
+    width: 820px;
+    height: 550px;
+    background-image: url('../design/pg3/exercicio_1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+    color: #333;
+    line-height: 1.3rem;
+    max-width: 100%;
+}
 @media (max-width:900px){
     .row-quadros {
         flex-direction: column;
@@ -438,4 +459,21 @@ span.negrito {
       .jornal {line-height: 1.3rem;}
       .bg-2 {background-attachment: unset;}
       .after-1::after, .after-2::after {display: none;}
+}
+@media (max-width:600px){
+    .jornal {
+        background-image: unset;
+        background-color: white;
+        padding: 10px;
+        height: auto;
+    }
+    .info-exercicio {
+        background-image: unset;
+        width: auto;
+        height: auto;
+        padding: 25px;
+        background-color: white;
+        box-shadow: 3px 3px 5px #333;
+        border: 2px solid #2d5054;
+    }
 }
