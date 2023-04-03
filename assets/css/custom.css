@@ -444,6 +444,9 @@ span.negrito {
     line-height: 1.3rem;
     max-width: 100%;
 }
+.bto-imprimir {
+    z-index: 99;
+}
 @media (max-width:1660px){
     .pagina {overflow-x: hidden;}
     .rellax-1 {
