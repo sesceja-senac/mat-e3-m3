@@ -12,3 +12,7 @@ $(document).ready(function() {
         localStorage.setItem('lstvideo-intro', 'true')
     })
 });
+
+$('.btVideo').click(function(){
+  $('.backdrop').fadeIn()
+})
