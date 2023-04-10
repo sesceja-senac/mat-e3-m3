@@ -126,6 +126,7 @@
   }
   .pagina figcaption	{
   display: block;	
+  text-align: center;
   }
   .pagina figure	{
   display: block;
@@ -361,10 +362,11 @@
   vertical-align: middle;
   border-color: inherit;	
   }
-  .pagina td{
+  .pagina th, .pagina td{
   display: table-cell;
   vertical-align: inherit;
   }	
+
   
   .pagina tfoot{
   display: table-footer-group;
@@ -693,6 +695,9 @@ p{
  width: 100%;
  padding: 0;
 }
+.container p{
+  word-break: break-word;
+}
 
 .icone::before{
  display: none !important;   
@@ -849,3 +854,20 @@ iframe, iframe.youtube-pl{
 
 
 
+table.sesc{
+  border: 2px solid #00767F ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+table.sesc td,  table.sesc th{   
+  border: 2px solid #00767F;
+  padding: 10px;    
+  border-collapse: collapse;
+}
+table.sesc td{
+   background-color: #F2F2F2;
+   color: #00767F;
+}
+table.sesc th {
+   color: white;
+   background-color: #009ba7;
+}

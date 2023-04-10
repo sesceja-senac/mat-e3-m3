@@ -529,25 +529,23 @@ h3, .subtitulo{
     padding-bottom: 6px;
 }
 
- table.sesc{   
+table.sesc{
     border: 2px solid #00767F ;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);    
- }
-
-
- table.sesc td,  table.sesc th{   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+table.sesc td,  table.sesc th{   
     border: 2px solid #00767F;
     padding: 10px;    
     border-collapse: collapse;
- }
- table.sesc td{
+}
+table.sesc td{
      background-color: #F2F2F2;
      color: #00767F;
- }
- table.sesc th {
+}
+table.sesc th {
      color: white;
-     background-color: #009ba7;   
- }
+     background-color: #009ba7;
+}
 
 /*cores auxiliares*/
 /*background*/
