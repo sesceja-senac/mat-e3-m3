@@ -3,6 +3,13 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: url('../design/tela_inicial/background.png') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+/*
 #wrapper {
     margin: 0;
     height: 100vh;
@@ -12,41 +19,27 @@
     padding-top: 40px;
     position: relative;
 }
-.img-1 {
-    display: block;
-    margin: auto;
-    position: relative;
-    
-}
-.img-2, .img-3 {
-    position: absolute;
-}
-.img-2 {
-    left: 18%;
-    top: 55%;
-    transform: translateY(-50%);
-}
-.img-3 {
-    right: 18%;
-    top: 40%;
-    transform: translateY(-50%);
-}
+*/
+
 .titulo {
-    position: absolute;   
-    left: 35px;
+    position: relative;   
+    margin: 50px auto;
+    display: block;
 }
 .iniciar {
-    width: 181px;
-    height: 181px;
+    width: 140px;
+    height: 140px;
     background-image: url('../design/tela_inicial/btn_hover_scale.png');
     background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 5%;
+    transition: all 0.2s;
 }
 .iniciar:hover {
-    transform: translateY(-50%) scale(1.04);
+    transform: translateY(-50%) scale(1.05);
 }
 .titulo-2 {
     left: 20px;
@@ -58,6 +51,20 @@
     position: absolute;
     top: 20px;
     right: 20px;
+}
+.elemento{
+    position: absolute;
+    width: 350px;
+    bottom: 2%;
+    animation: elementoAnim 5s forwards ;
+}
+@keyframes elementoAnim {
+    from{
+        left: 30%;
+    }
+    to{
+        left: 55%;
+    }
 }
 
 .backdrop {
@@ -81,7 +88,7 @@
     color: white;
     font-size: 18px;
     position: absolute;
-    top: 100px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -125,6 +132,11 @@
     }
     .img-2, .img-3 {
         width: 12%;
+    }
+}
+@media (min-width:1500px){
+    .modal-video{
+        top: 80px;
     }
 }
 @media (max-width:1500px){

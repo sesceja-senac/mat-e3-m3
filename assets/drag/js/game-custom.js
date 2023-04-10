@@ -1,4 +1,10 @@
+var snd_path = "../assets/interativos/esquema_bru/snd/"
 
+var FXManager = {
+    snd_certo : new Audio(snd_path+"acerto.mp3"),
+    snd_erro : new Audio(snd_path+"erro.mp3"),
+    snd_aplauso : new Audio(snd_path+"aplauso.mp3"),
+}
 
 // Aqui você adiciona ou remove os containers pra onde devem ir os cards
 var containers = [
@@ -48,10 +54,15 @@ dragula({
 }).on("drop", function(){
   scrollable = true;
 
-  $('#bgmodal-acerto').modal('show')
-      // audio.setAttribute('src','audios/acerto.mp3'); //change the source
+      $('#bgmodal-acerto').modal('show')
+       audio.setAttribute('src','audios/acerto.mp3'); //change the source
       // audio.load(); //load the new source
       // audio.play(); //play
+
+      $('.feedback-negativo').css('display','none');
+      $('.feedback-positivo').css('display','block');
+      FXManager.snd_certo.play();
+
 
 }).on("cancel", function(el, source, target){
   scrollable = true;
@@ -67,9 +78,12 @@ dragula({
       }else{
         $('#bgmodal-erro-absoluta').modal('show')
       }
+
+      $('.feedback-positivo').css('display','none');
+      $('.feedback-negativo').css('display','block');
+      FXManager.snd_erro.play();
       
-      
-      // audio.setAttribute('src','audios/erro.mp3'); //change the source
+      // audio.setAttribute('src','../audios/erro.mp3'); //change the source
       // audio.load(); //load the new source
       // audio.play(); //play
 });
