@@ -54,7 +54,7 @@ body{
 }
 .elemento{
     position: absolute;
-    width: 350px;
+    width: 30%;
     bottom: 2%;
     animation: elementoAnim 5s forwards ;
 }
