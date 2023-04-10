@@ -349,6 +349,7 @@ span.negrito {
     box-shadow: 4px 4px 6px #333;
     margin: 40px auto;
 }
+
 .p-reset div {
     padding-left: 0;
     padding-right: 0;
@@ -463,6 +464,18 @@ span.negrito {
     display: none;
 }
 
+.bg-media_aritmetica{
+    background-color: #498080;
+    color: white;
+    text-align: center;
+    width: 450px;
+    display: block;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 4px 4px 6px #333;
+    margin: 40px auto;
+}
+
 @media (max-width:1660px){
     .pagina {overflow-x: hidden;}
     .rellax-1 {
@@ -541,6 +554,11 @@ span.negrito {
 
     table.sesc th{
         font-size: 14px;
+    }
+
+    .bg-media_aritmetica{
+        width: 100%;
+        padding: 15px;
     }
 }
 
