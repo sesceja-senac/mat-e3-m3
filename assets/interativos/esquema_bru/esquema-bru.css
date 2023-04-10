@@ -22,17 +22,31 @@ div.esquemaDaBru{
     font-weight: initial;
     background-color: white;
 }
-.alt-c.selected,
+.alt-c.selected{
+    transform: none;
+    color: white;
+    background-color: #008d3f;
+    border-color: #008d3f;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
+}
 .alt-e.selected{
     transform: none;
     color: white;
-    background-color: #00838D;
+    background-color: #a10000;
+    border-color: #a10000;
     box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
 }
-.alt-c.selected:hover, .alt-e.selected:hover{
+.alt-c.selected:hover{
     transform: none;
     color: white;
-    background-color: #00838D;
+    background-color: #008d3f;
+    border-color: #008d3f;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
+}
+.alt-e.selected:hover{
+    transform: none;
+    color: white;
+    background-color: #a10000;
     box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
 }
 /*

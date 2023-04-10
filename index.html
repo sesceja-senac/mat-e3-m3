@@ -18,13 +18,11 @@
         <h1>Aguarde enquanto o conteúdo é carregado.</h1>
     </div>
     <div id="wrapper">
-        <img src="assets/design/tela_inicial/titulo.png" alt="" class="titulo">
-        <img src="assets/design/tela_inicial/logo_matematica.png" alt="" class="titulo-2">
-        <img src="assets/design/tela_inicial/logo_sesc.png" alt="" class="logo">
-        <img src="assets/design/tela_inicial/elemento_central.png" alt="" class="img-1">
-        <img src="assets/design/tela_inicial/elemento_lateral_1.png" alt="" class="img-2">
-        <img src="assets/design/tela_inicial/elemento_lateral_2.png" alt="" class="img-3">
-        <a href="conteudo/index.html" class="iniciar"></a>
+        <img src="assets/design/tela_inicial/titulo.png" alt="A minha, a sua e a nossa família" class="titulo">
+        <img src="assets/design/tela_inicial/logo_matematica.png" alt="Matemática e suas tecnologias" class="titulo-2">
+        <img src="assets/design/tela_inicial/logo_sesc.png" alt="Logo SESC" class="logo">
+        <img src="assets/design/tela_inicial/elemento.png" alt="crianças jogando futebol" class="elemento">
+        <a href="conteudo/index.html" title="Iniciar" class="iniciar"></a>
     </div>
     <div class="backdrop">
         <div class="modal-video">
@@ -48,3 +46,30 @@
 </body>
 
 </html>
+
+<!-- Versao atual do handtalk -->
+<script>
+    var scriptElem=document.createElement("script");
+    scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+    scriptElem.charset="UTF-8",
+    scriptElem.onload=function(){
+        window.ht = new HT({
+            token:"bf5b7efb148a829a126a0e0c9fd533bf",
+            align:"top",
+            videoEnabled: true,
+            ytEmbedReplace: true,           
+            mobileConfig:{align:"right",
+                            actionsAlign:"top",
+                            customButtonStyle:{
+                                borderRadius:"6px",
+                                size:"38px",
+                                horizontalMargin:"13px",
+                                bottomMargin:"140px",
+                                rightMargin:"40px"}
+                            }
+            });        
+        $('.ht-skip').attr("aria-hidden","true")
+    },
+document.body.appendChild(scriptElem);
+
+</script>
