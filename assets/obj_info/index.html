@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infográfico com dados do Brasil.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-infografico.css">
+</head>
+
+<body>
+    <div class="infografico telaGrande">
+        <div class="bg position-relative">
+            <img src="assets/img/bg.png" alt="Backgroud">
+        </div>
+        <div class="position-relative">
+            <button class="titleInfografico semFundo position-absolute efeito titulo">
+                <span class="play position-absolute play1"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <h1 class="h1Infografico">CONFIGURAÇÕES FAMILIARES</h1>
+                <p class="subInfografico">De acordo com o Censo de 2010, há cerca de <span class="cor"><strong>57 milhões</strong></span> de lares.</p>
+            </button>
+            <div class="infoSom position-absolute text-center">
+                <p class="pSom"><strong>Clique nas imagens para ouvir a descrição</strong></p>
+            </div>
+            <div class="primeiroTriangulo position-absolute">
+                <img src="assets/img/grafico.png" class="img-fluid position-relative grafico" alt="gráfico com os dados da configuração familiar">
+                <h2 class="porcentagem position-relative corNuclear" id="porNuclear">66,2%</h2>
+                <h2 class="porcentagem position-relative corEstendida" id="porEstendida">19%</h2>
+                <h2 class="porcentagem position-relative corUnipessoal" id="porUnipessoal">12,2%</h2>
+                <h2 class="porcentagem position-relative corComposta" id="porComposta">2,5%</h2>
+                <h3 class="subPorcentagem position-relative corNuclear" id="subNuclear">Nuclear</h3>
+                <h3 class="subPorcentagem position-relative corEstendida" id="subEstendida">Estendida</h3>
+                <h3 class="subPorcentagem position-relative corUnipessoal" id="subUnipessoal">Unipessoal</h3>
+                <h3 class="subPorcentagem position-relative corComposta" id="subComposta">Composta</h3>
+            </div>
+            <div class="meio position-absolute">
+                <div class="naoClicavelMeio position-relative">
+                    <h3 class="vertical position-absolute posicao1 corUnipessoal">Unipessoal</h3>
+                    <h3 class="vertical position-absolute posicao2 corEstendida">Estendida</h3>
+                    <h3 class="vertical position-absolute posicao3 corComposta">Composta</h3>
+                    <h3 class="vertical position-absolute posicao4 corNuclear">Nuclear</h3>
+                </div>
+                <button class="linha1 semFundo position-relative efeito" id="meioUnipessoal">
+                    <span class="play position-absolute play2"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                    <div class="row">
+                        <div class="l1c1 bordinha col">
+                            <img src="assets/img/pessoa1.png" class="img-fluid" alt="Homem">
+                            <div class="legenda">
+                                <h4 class="porDescricao corUnipessoal">51,2%</h4>
+                                <h5 class="descricao">Homens sozinhos</h5>
+                            </div>
+                        </div>
+                        <div class="l1c2 bordinha col">
+                            <img src="assets/img/pessoa2.png" class="img-fluid" alt="mulher">
+                            <div class="legenda">
+                                <h4 class="porDescricao corUnipessoal">48,8%</h4>
+                                <h5 class="descricao">Mulheres sozinhas</h5>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button class="linha2 semFundo position-relative efeito" id="meioEstendida">
+                    <span class="play position-absolute play3"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                    <div class="row">
+                        <div class="l2c1 align-self-end bordinha col">
+                            <img src="assets/img/pessoa3.png" class="img-fluid" alt="Casal com filhos e outros parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corEstendida">43%</h4>
+                                <h5 class="descricao">Casal com filhos e outros parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l2c2 align-self-end bordinha col">
+                            <img src="assets/img/pessoa4.png" class="img-fluid" alt="Mulher com filhos e outros parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corEstendida">26,7%</h4>
+                                <h5 class="descricao">Mulher com filhos e outros parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l2c3 align-self-end bordinha col">
+                            <img src="assets/img/pessoa5.png" class="img-fluid" alt="Casal sem filho e outros parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corEstendida">10,9%</h4>
+                                <h5 class="descricao">Casal sem filho e outros parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l2c4 align-self-end bordinha col">
+                            <img src="assets/img/pessoa6.png" class="img-fluid" alt="Homens com filhos e outros parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corEstendida">3,6%</h4>
+                                <h5 class="descricao">Homens com filhos e outros parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l2c5 align-self-end bordinha col">
+                            <img src="assets/img/pessoa7.png" class="img-fluid" alt="Outros tipos">
+                            <div class="legenda">
+                                <h4 class="porDescricao corEstendida">15,8%</h4>
+                                <h5 class="descricao">Outros tipos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button class="linha3 semFundo position-relative efeito" id="meioComposta">
+                    <span class="play position-absolute play4"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                    <div class="row">
+                        <div class="l3c1 align-self-end bordinha col">
+                            <img src="assets/img/pessoa8.png" class="img-fluid" alt="Casal com filhos e não parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corComposta">30,1%</h4>
+                                <h5 class="descricao">Casal com filhos e não parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l3c2 align-self-end bordinha col">
+                            <img src="assets/img/pessoa9.png" class="img-fluid" alt="Mulher com filhos e não parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corComposta">15,8%</h4>
+                                <h5 class="descricao">Mulher com filhos e não parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l3c3 align-self-end bordinha col">
+                            <img src="assets/img/pessoa10.png" class="img-fluid" alt="Casal sem filho e não parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corComposta">9,9%</h4>
+                                <h5 class="descricao">Casal sem filho e não parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l3c4 align-self-end bordinha col">
+                            <img src="assets/img/pessoa11.png" class="img-fluid" alt="Homens com filhos e não parentes">
+                            <div class="legenda">
+                                <h4 class="porDescricao corComposta">3,5%</h4>
+                                <h5 class="descricao">Homens com filhos e não parentes</h5>
+                            </div>
+                        </div>
+                        <div class="l3c5 align-self-end bordinha col">
+                            <img src="assets/img/pessoa12.png" class="img-fluid" alt="Outros tipos">
+                            <div class="legenda">
+                                <h4 class="porDescricao corComposta">40,6%</h4>
+                                <h5 class="descricao">Outros tipos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button class="linha4 semFundo position-relative efeito" id="meioNuclear">
+                    <span class="play position-absolute play5"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                    <div class="row">
+                        <div class="l4c1 align-self-end bordinha col">
+                            <img src="assets/img/pessoa13.png" class="img-fluid" alt="Casal com filhos">
+                            <div class="legenda">
+                                <h4 class="porDescricao corNuclear">30,1%</h4>
+                                <h5 class="descricao">Casal com filhos</h5>
+                            </div>
+                        </div>
+                        <div class="l4c2 align-self-end bordinha col">
+                            <img src="assets/img/pessoa14.png" class="img-fluid" alt="Casal sem filhos">
+                            <div class="legenda">
+                                <h4 class="porDescricao corNuclear">15,8%</h4>
+                                <h5 class="descricao">Casal sem filhos</h5>
+                            </div>
+                        </div>
+                        <div class="l4c3 align-self-end bordinha col">
+                            <img src="assets/img/pessoa15.png" class="img-fluid" alt="Mulher com filhos">
+                            <div class="legenda">
+                                <h4 class="porDescricao corNuclear">9,9%</h4>
+                                <h5 class="descricao">Mulher com filhos</h5>
+                            </div>
+                        </div>
+                        <div class="l4c4 align-self-end bordinha col">
+                            <img src="assets/img/pessoa16.png" class="img-fluid" alt="Homem com filhos">
+                            <div class="legenda">
+                                <h4 class="porDescricao corNuclear">3,5%</h4>
+                                <h5 class="descricao">Homem com filhos</h5>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button class="semFundo position-absolute efeito gay homo">
+                    <span class="play position-absolute play6"><img src="assets/img/play.png" class="img-fluid"
+                            alt="Play ou pause"></span>
+                    <h2 class="h2Gay">Casais gays</h2>
+                    <div class="row text-center">
+                        <div class="row col mulheres">
+                            <img src="assets/img/casal1.png" class="col img-fluid" alt="Mulheres">
+                            <div class="legenda2 col align-self-center">
+                                <h4 class="descricao2">Mulheres</h4>
+                                <h4 class="porDescricao2"><strong>53,8%</strong></h4>
+                            </div>
+                        </div>
+                        <div class="row col homens">
+                            <img src="assets/img/casal2.png" class="col img-fluid" alt="Homens">
+                            <div class="legenda2 col align-self-center">
+                                <h4 class="descricao2">Homens</h4>
+                                <h4 class="porDescricao2"><strong>42,2%</strong></h4>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <div class="segundoTriangulo position-absolute">
+                <button class="semFundo position-relative efeito botaoResponsavel">
+                    <span class="play position-absolute play8"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                    <div class="row">
+                        <div class="bordinha col">
+                            <img src="assets/img/pessoa1.png" class="img-fluid" alt="Homem">
+                            <div class="legenda3">
+                                <h5 class="descricao3">Homens</h5>
+                                <h4 class="porDescricao3">61,3%</h4>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="assets/img/pessoa2.png" class="img-fluid" alt="mulher">
+                            <div class="legenda3">
+                                <h5 class="descricao3">Mulheres</h5>
+                                <h4 class="porDescricao3">38,7%</h4>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <h2 class="h2Responsavel">Responsável pela família</h2>
+            </div>
+            <div class="rodapeLaranja position-absolute">
+                <button class="semFundo position-relative text-center efeito rodape">
+                    <span class="play position-absolute play7"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                    <div class="row">
+                        <div class="col">
+                            <span class="bolinha">...</span>
+                            <p class="pRodape">Há responsabilidade compartilhada em <span class="destaque"><strong>29,6%</strong></span> dos lares.</p>
+                        </div>
+                        <div class="col">
+                            <span class="bolinha">...</span>
+                            <p class="pRodape">Casais que trabalham e não tem filhos, chamados de dinks, são <span class="destaque"><strong>2 milhões.</strong></span></p>
+                        </div>
+                        <div class="col">
+                            <span class="bolinha">...</span>
+                            <p class="pRodape">Pessoas morando com amigos somam <span class="destaque"><strong>400 mil.</strong></span></p>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modo-smart text-center">
+        <div class="position-relative w-100 trianguloEsquerdoSmart text-center">
+            <div class="infoSomSmart w-100 position-absolute text-center">
+                <p class="pSomSmart"><strong>Clique nas imagens para ouvir a descrição</strong></p>
+            </div>
+            <button class="titleInfograficoSmart semFundo position-absolute efeitoSmart titulo text-center w-100">
+                <h1 class="h1InfograficoSmart"> <span class="play position-absolute play1 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span> &nbsp &nbsp &nbsp CONFIGURAÇÕES FAMILIARES</h1>
+                <p class="subInfograficoSmart">De acordo com o Censo de 2010, há cerca de <span class="cor"><strong>57 milhões</strong></span> de lares.</p>
+                <img src="assets/img/graficoSmart.png" class="img-fluid graficoSmart" alt="gráfico com os dados da configuração familiar">
+            </button>    
+        </div>
+        <div class="meio-smart w-100 position-absolute text-center">
+            <button class="semFundo position-absolute efeitoSmart gay homoSmart w-100">
+                <span class="play position-absolute play6 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <h2 class="h2GaySmart">Casais gays</h2>
+                <div class="row">
+                    <div class="mulheresSmart col">
+                        <img src="assets/img/casal1.png" class="img-fluid" alt="Mulheres">
+                        <div class="legenda2Smart col align-self-center">
+                            <h4 class="descricao2Smart">Mulheres</h4>
+                            <h4 class="porDescricao2Smart"><strong>53,8%</strong></h4>
+                        </div>
+                    </div>
+                    <div class="homensSmart col">
+                        <img src="assets/img/casal2.png" class="col img-fluid" alt="Homens">
+                        <div class="legenda2Smart align-self-center">
+                            <h4 class="descricao2Smart">Homens</h4>
+                            <h4 class="porDescricao2Smart"><strong>42,2%</strong></h4>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <button class="linha1 semFundo position-relative efeitoSmart text-center w-100" id="meioUnipessoalSmart" style="background-color: white;">
+                <span class="play position-absolute play2 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <div class="row">
+                    <div class="bordinha col">
+                        <img src="assets/img/pessoa1.png" class="img-fluid" alt="Homem">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corUnipessoal">51,2%</h4>
+                            <h5 class="descricaoSmart">Homens sozinhos</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/pessoa2.png" class="img-fluid" alt="mulher">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corUnipessoal">48,8%</h4>
+                            <h5 class="descricaoSmart">Mulheres sozinhas</h5>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="litleSmart position-absolute corUnipessoal w-100" style="background-color: white;">Unipessoal</h3>
+            </button>
+            <button class="linha2 semFundo position-relative efeitoSmart w-100" id="meioEstendidaSmart"style="background-color: white;">
+                <span class="play position-absolute play3 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <div class="row p-3">
+                    <div class="align-self-end bordinha col">
+                        <img src="assets/img/pessoa3.png" class="img-fluid" alt="Casal com filhos e outros parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corEstendida">43%</h4>
+                            <h5 class="descricaoSmart">Casal com filhos e outros parentes</h5>
+                        </div>
+                    </div>
+                    <div class="align-self-end col">
+                        <img src="assets/img/pessoa4.png" class="img-fluid" alt="Mulher com filhos e outros parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corEstendida">26,7%</h4>
+                            <h5 class="descricaoSmart">Mulher com filhos e outros parentes</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="align-self-end bordinha col">
+                        <img src="assets/img/pessoa5.png" class="img-fluid" alt="Casal sem filho e outros parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corEstendida">10,9%</h4>
+                            <h5 class="descricaoSmart">Casal sem filho e outros parentes</h5>
+                        </div>
+                    </div>
+                    <div class="align-self-end col">
+                        <img src="assets/img/pessoa6.png" class="img-fluid" alt="Homens com filhos e outros parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corEstendida">3,6%</h4>
+                            <h5 class="descricaoSmart">Homens com filhos e outros parentes</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="align-self-end col p-2">
+                    <img src="assets/img/pessoa7.png" class="img-fluid" alt="Outros tipos">
+                    <div class="legendaSmart">
+                        <h4 class="porDescricaoSmart corEstendida">15,8%</h4>
+                        <h5 class="descricaoSmart">Outros tipos</h5>
+                    </div>
+                </div>
+                <h3 class="litleSmart position-absolute corEstendida w-100" style="background-color: white;">Estendida</h3>
+            </button>
+            <button class="linha3 semFundo position-relative efeitoSmart w-100" id="meioCompostaSmart" style="background-color: white;">
+                <span class="play position-absolute play4 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <div class="row p-3">
+                    <div class="bordinha col">
+                        <img src="assets/img/pessoa8.png" class="img-fluid" alt="Casal com filhos e não parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corComposta">30,1%</h4>
+                            <h5 class="descricaoSmart">Casal com filhos e não parentes</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/pessoa9.png" class="img-fluid" alt="Mulher com filhos e não parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corComposta">15,8%</h4>
+                            <h5 class="descricaoSmart">Mulher com filhos e não parentes</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bordinha col">
+                        <img src="assets/img/pessoa10.png" class="img-fluid" alt="Casal sem filho e não parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corComposta">9,9%</h4>
+                            <h5 class="descricaoSmart">Casal sem filho e não parentes</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/pessoa11.png" class="img-fluid" alt="Homens com filhos e não parentes">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corComposta">3,5%</h4>
+                            <h5 class="descricaoSmart">Homens com filhos e não parentes</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <img src="assets/img/pessoa12.png" class="img-fluid" alt="Outros tipos">
+                    <div class="legendaSmart">
+                        <h4 class="porDescricaoSmart corComposta">40,6%</h4>
+                        <h5 class="descricaoSmart">Outros tipos</h5>
+                    </div>
+                </div>
+               
+                <h3 class="litleSmart position-absolute corComposta w-100" style="background-color: white;">Composta</h3>
+            </button>
+            <button class="linha4 semFundo position-relative efeitoSmart w-100" id="meioNuclearSmart" style="background-color: white;">
+                <span class="play position-absolute play5 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <div class="row p-3">
+                    <div class="align-self-end bordinha col">
+                        <img src="assets/img/pessoa13.png" class="img-fluid" alt="Casal com filhos">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corNuclear">30,1%</h4>
+                            <h5 class="descricaoSmart">Casal com filhos</h5>
+                        </div>
+                    </div>
+                    <div class="align-self-end col">
+                        <img src="assets/img/pessoa14.png" class="img-fluid" alt="Casal sem filhos">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corNuclear">15,8%</h4>
+                            <h5 class="descricaoSmart">Casal sem filhos</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="align-self-end bordinha col">
+                        <img src="assets/img/pessoa15.png" class="img-fluid" alt="Mulher com filhos">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corNuclear">9,9%</h4>
+                            <h5 class="descricaoSmart">Mulher com filhos</h5>
+                        </div>
+                    </div>
+                    <div class="align-self-end col">
+                        <img src="assets/img/pessoa16.png" class="img-fluid" alt="Homem com filhos">
+                        <div class="legendaSmart">
+                            <h4 class="porDescricaoSmart corNuclear">3,5%</h4>
+                            <h5 class="descricaoSmart">Homem com filhos</h5>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="litleSmart position-absolute corNuclear w-100">Nuclear</h3>
+            </button>
+        </div>
+        <div class="trianguloDireitoSmart position-absolute text-center w-100">
+            <button class="semFundo position-relative efeitoSmart botaoResponsavelSmart w-100">
+                <span class="play position-absolute play8 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <div class="row">
+                    <div class="bordinha col align-self-end">
+                        <img src="assets/img/pessoa1.png" class="img-fluid" alt="Homem">
+                        <div class="legenda3Smart">
+                            <h5 class="descricao3Smart">Homens</h5>
+                            <h4 class="porDescricao3Smart">61,3%</h4>
+                        </div>
+                    </div>
+                    <div class="col align-self-end">
+                        <img src="assets/img/pessoa2.png" class="img-fluid" alt="mulher">
+                        <div class="legenda3Smart">
+                            <h5 class="descricao3Smart">Mulheres</h5>
+                            <h4 class="porDescricao3Smart">38,7%</h4>
+                        </div>
+                    </div>
+                </div>
+            </button>
+            <h2 class="h2ResponsavelSmart">Responsável pela família</h2>
+        </div>
+        <div class="rodapeLaranjaSmart position-absolute w-100">
+            <button class="semFundo position-relative text-center efeitoSmart rodapeSmart w-100">
+                <span class="play position-absolute play7 pauseSmart"><img src="assets/img/play.png" class="img-fluid" alt="Play ou pause"></span>
+                <div class="row">
+                    <div class="col">
+                        <span class="bolinhaSmart">...</span>
+                        <p class="pRodapeSmart">Há responsabilidade compartilhada em <br><span class="destaqueSmart"><strong>29,6%</strong></span> dos lares.</p>
+                    </div>
+                    <div class="col">
+                        <span class="bolinhaSmart">...</span>
+                        <p class="pRodapeSmart">Casais que trabalham e não tem filhos, chamados de dinks, são <br><span class="destaqueSmart"><strong>2 milhões.</strong></span></p>
+                    </div>
+                    <div class="col">
+                        <span class="bolinhaSmart">...</span>
+                        <p class="pRodapeSmart">Pessoas morando com amigos somam <br><span class="destaqueSmart"><strong>400 mil.</strong></span></p>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div class="audios">
+        <audio id="audioTitulo" src="assets/audio/titulo.mp3"></audio>
+        <audio id="audioUnipessoal" src="assets/audio/unipessoal.mp3"></audio>
+        <audio id="audioEstendida" src="assets/audio/estendida.mp3"></audio>
+        <audio id="audioComposta" src="assets/audio/composta.mp3"></audio>
+        <audio id="audioNuclear" src="assets/audio/nuclear.mp3"></audio>
+        <audio id="audioHomosexual" src="assets/audio/homosexual.mp3"></audio>
+        <audio id="audioResponsavel" src="assets/audio/responsavel.mp3"></audio>
+        <audio id="audioDinks" src="assets/audio/dinks.mp3"></audio>
+    </div>
+
+    <!-- Versao atual do handtalk -->
+    <script>
+        var scriptElem = document.createElement("script");
+        scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset = "UTF-8",
+            scriptElem.onload = function () {
+                window.ht = new HT({
+                    token: "bf5b7efb148a829a126a0e0c9fd533bf",
+                    align: "top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,
+                    mobileConfig: {
+                        align: "right",
+                        actionsAlign: "top",
+                        customButtonStyle: {
+                            borderRadius: "6px",
+                            size: "38px",
+                            horizontalMargin: "13px",
+                            bottomMargin: "140px",
+                            rightMargin: "40px"
+                        }
+                    }
+                });
+                $('.ht-skip').attr("aria-hidden", "true")
+            },
+            document.body.appendChild(scriptElem);
+    </script>
+    <script>
+        window.addEventListener("load", AOS.refresh);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="assets/js/script-infografico.js"></script>
+</body>
+
+</html>

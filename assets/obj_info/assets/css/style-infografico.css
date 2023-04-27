@@ -1,0 +1,628 @@
+:root {
+    --cor-fundo: #304d63;
+    --corUnipessoal: #ed8975;
+    --corComposta: #70ad47;
+    --corEstendida: #ed7d31;
+    --corNuclear: #5b9bd5;
+    --corRodape: #faba59;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.infografico {
+    width: 1920px;
+    height: 1080px;
+    position: fixed;
+    left: calc(50% - 1920px / 2);
+    margin: auto;
+    top: calc(50% - 1080px / 2);
+}
+
+.bg.position-relative {
+    top: 0px;
+}
+
+.semFundo {
+    background: none;
+    border: none;
+}
+
+.corUnipessoal {
+    color: var(--corUnipessoal);
+}
+
+.corComposta {
+    color: var(--corComposta);
+}
+
+.corEstendida {
+    color: var(--corEstendida);
+}
+
+.corNuclear {
+    color: var(--corNuclear);
+}
+
+.efeito:hover {
+    transform: scale(1.1);
+    filter: grayscale(1);
+}
+
+
+/********************************************************************/
+/************************** triângulo Esquerdo **********************/
+/********************************************************************/
+
+.titleInfografico.position-absolute {
+    top: -1058px;
+    left: 118px;
+    text-align: left;
+}
+
+.h1Infografico {
+    font-size: 50px;
+    font-weight: bold;
+    color: wheat;
+}
+
+.subInfografico {
+    font-size: 23px;
+    color: #C9C9C9;
+}
+
+.cor {
+    color: wheat;
+}
+
+.primeiroTriangulo.position-absolute {
+    top: -860px;
+    left: 71px;
+}
+
+.grafico {
+    width: 228px;
+    left: 86px;
+    top: 94px;
+}
+
+.porcentagem {
+    font-size: 48px;
+    font-weight: bold;
+    width: 173px;
+}
+
+.subPorcentagem {
+    font-size: 24px;
+    color: white;
+    width: 173px;
+}
+
+#porNuclear {
+    top: 147px;
+    left: 115px;
+}
+
+#subNuclear {
+    top: -134px;
+    left: 115px;
+}
+
+#porEstendida {
+    top: -46px;
+    left: -44px;
+}
+
+#subEstendida {
+    top: -298px;
+    left: -42px;
+}
+
+#porUnipessoal {
+    top: -323px;
+    left: -8px;
+}
+
+#subUnipessoal {
+    top: -549px;
+    left: -6px;
+}
+
+#porComposta {
+    top: -416px;
+    left: 217px;
+}
+
+#subComposta {
+    top: -613px;
+    left: 215px;
+}
+
+/********************************************************************/
+/******************************** meio ******************************/
+/********************************************************************/
+.naoClicavelMeio.position-relative {
+    top: 878px;
+}
+
+.iconSom {
+    padding-top: 9px;
+}
+
+.infoSom {
+    top: -1076px;
+    left: 1298px;
+    background-color: #304d6359;
+    border-radius: 15px;
+    width: 649px;
+    text-transform: uppercase;
+    color: #515151;
+    padding-top: 7px;
+}
+
+.playPause {
+    padding-top: 9px;
+    background-color: var(--corRodape);
+    border-radius: 15px;
+    width: 54px;
+}
+
+.meio.position-absolute {
+    top: -1027px;
+    left: 731px;
+    width: 1000px;
+    height: 919px;
+}
+
+.porDescricao {
+    font-size: 40px;
+    font-weight: bold;
+    width: 173px;
+    padding: 0px;
+}
+
+.descricao {
+    font-size: 16px;
+    padding: 0px;
+    color: #333;
+}
+
+.vertical {
+    font-size: 36px;
+    font-weight: bold;
+    transform: rotate(270deg);
+}
+
+.bordinha {
+    border-right: 2px dashed #bdbdbd;
+}
+
+#meioUnipessoal {
+    left: 200px;
+    top: 12px;
+}
+
+#meioEstendida {
+    left: 0px;
+    top: 12px;
+}
+
+#meioComposta {
+    left: -201px;
+    top: 23px;
+}
+
+#meioNuclear {
+    left: -398px;
+    top: 41px;
+}
+
+.posicao1 {
+    top: -786px;
+    left: 557px;
+}
+
+.posicao2 {
+    top: -549px;
+    left: 999px;
+}
+
+.posicao3 {
+    top: -306px;
+    left: 792px;
+}
+
+.posicao4 {
+    top: -71px;
+    left: 387px;
+}
+
+.legenda2.col {
+    padding: 0px;
+}
+
+.play {
+    width: 52px;
+}
+
+.play1 {
+    top: 31px;
+    left: -70px;
+}
+
+.play2 {
+    top: 60px;
+    left: -18px;
+}
+
+.play3 {
+    top: 98px;
+    left: -60px;
+}
+
+.play4 {
+    top: 96px;
+    left: -77px;
+}
+
+.play5 {
+    top: 99px;
+    left: -61px;
+}
+
+.play6 {
+    top: 10px;
+    left: 10px;
+}
+
+.play7 {
+    top: 60px;
+    left: -59px;
+}
+
+.play8 {
+    top: 68px;
+    left: -60px;
+}
+
+/********************************************************************/
+/***************************** Botão meio ***************************/
+/********************************************************************/
+
+.homo {
+    top: 3px;
+    height: 195px;
+    left: 718px;
+    width: 429px;
+    background-color: var(--corRodape);
+    border-radius: 20px;
+    box-shadow: 5px 5px #304d63;
+    padding: 10px;
+}
+
+.h2Gay {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0%;
+    color: var(--cor-fundo);
+}
+
+.descricao2 {
+    color: var(--cor-fundo);
+}
+
+.porDescricao2 {
+    font-size: 35px;
+    color: var(--cor-fundo);
+}
+
+.homens {
+    padding: 19px;
+    padding-inline: 25px;
+}
+
+.mulheres {
+    padding: 30px;
+}
+
+/********************************************************************/
+/************************** triângulo Direito ***********************/
+/********************************************************************/
+
+.segundoTriangulo {
+    top: -350px;
+    left: 1498px;
+    width: 448px;
+}
+
+.porDescricao3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #8fd0f3;
+}
+
+.descricao3 {
+    color: white;
+}
+
+.botaoResponsavel {
+    left: 155px;
+}
+
+.h2Responsavel {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--corRodape);
+}
+
+/********************************************************************/
+/******************************* rodape *****************************/
+/********************************************************************/
+
+.rodapeLaranja {
+    top: -128px;
+    left: 171px;
+    font-size: 21px;
+}
+
+.bolinha {
+    font-size: 41px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--corUnipessoal);
+}
+
+.pRodape {
+    color: var(--cor-fundo);
+}
+
+.destaque {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/**************************************************************************/
+/******************************* modo Smart ******************************/
+/************************************************************************/
+
+.p-paisagem {
+    color: white;
+    text-align: center;
+}
+
+.img-paisagem {
+    max-width: 70% !important;
+    height: auto;
+    display: block;
+}
+
+.efeitoSmart:hover {
+    transform: scale(1.1);
+    filter: grayscale(1);
+}
+
+@media only screen and (orientation: portrait) {
+    .modo-smart {
+        background-color: white;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9999999999999999999;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .telaGrande{
+        display: none;
+    }
+    .bg{
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .modo-smart {
+        display: none;
+    }
+}
+
+/**************************************************************************/
+/************************* Triângulo Esquerdo Smart **********************/
+/************************************************************************/
+.infoSomSmart {
+    background-color: var(--corRodape);
+    padding-top: 9px;
+    color: var(--cor-fundo);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.titleInfograficoSmart {
+    top: 80px;
+    left: 10px;
+}
+
+.trianguloEsquerdoSmart {
+    background-color: var(--cor-fundo);
+    height: 630px;
+}
+
+.h1InfograficoSmart {
+    font-size: 33px;
+    font-weight: bold;
+    color: wheat;
+}
+
+.subInfograficoSmart {
+    font-size: 15px;
+    color: #C9C9C9;
+}
+
+.img-fluid.graficoSmart {
+	width: 348px;
+}
+
+.play1Smart {
+	top: 17px;
+	left: 14px;
+	width: 32px;
+}
+
+/********************************************************************/
+/***************************** Botão meio ***************************/
+/********************************************************************/
+
+.meio-smart {
+    top: 549px;
+    background-color: white;
+}
+
+.homoSmart {
+    background-color: var(--corRodape);
+    height: 237px;
+	left: 0px;
+	top: -21px;
+}
+
+.play.position-absolute.play6.pauseSmart {
+    top: 10px;
+    left: 10px;
+}
+
+.h2GaySmart {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0%;
+    color: var(--cor-fundo);
+}
+
+.descricao2Smart {
+    font-size: 15px;
+    color: var(--cor-fundo);
+}
+
+.porDescricao2Smart {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--cor-fundo);
+}
+
+#meioUnipessoalSmart {
+    left: 1px;
+    top: 262px;
+    width: 310px;
+}
+
+#meioEstendidaSmart {
+    left: 0px;
+    top: 376px;
+    width: 305px;
+}
+
+#meioCompostaSmart {
+    left: 0px;
+    top: 445px;
+    width: 310px;
+}
+
+#meioNuclearSmart {
+	left: 3px;
+	top: 476px;
+	height: 498px;
+}
+
+.porDescricaoSmart {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricaoSmart {
+    font-size: 15px;
+    color: #333;
+}
+
+.litleSmart {
+    font-weight: bold;
+    border-top: 2px dashed #bdbdbd;
+}
+
+.pauseSmart {
+    top: 0px;
+    left: 0px;
+    width: 32px;
+}
+
+.play.position-absolute.play8.pauseSmart {
+    top: 10px;
+    left: 10px;
+    width: 32px;
+}
+
+/**************************************************************************/
+/************************** triângulo Direito Smart ***********************/
+/*************************************************************************/
+
+.trianguloDireitoSmart {
+	top: 3048px;
+	background-color: var(--cor-fundo);
+	height: 293px;
+}
+
+.botaoResponsavelSmart {
+    padding-top: 40px;
+}
+
+.porDescricao3Smart {
+    font-size: 30px;
+    font-weight: bold;
+    color: #8fd0f3;
+}
+
+.descricao3Smart {
+    font-size: 15px;
+    color: white;
+}
+
+.h2ResponsavelSmart {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--corRodape);
+}
+
+/**************************************************************************/
+/******************************* rodape Smart *****************************/
+/**************************************************************************/
+
+.rodapeLaranjaSmart {
+	top: 3329px;
+	font-size: 15px;
+	background-color: var(--corRodape);
+}
+
+.bolinhaSmart {
+    font-size: 31px;
+    padding: 0px;
+    margin: 0px;
+    color: var(--corUnipessoal);
+}
+
+.pRodapeSmart {
+    color: var(--cor-fundo);
+}
+
+.destaqueSmart {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.play.position-absolute.play7.pauseSmart {
+    top: 10px;
+    left: 10px;
+}

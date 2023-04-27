@@ -162,12 +162,16 @@ figure {margin-top: 40px;} figcaption {margin-bottom: 40px;}
 .img_quadro:nth-child(2){
     margin-top: -200px;
 }
+
 .tooltip-link {
     color: inherit;
     text-decoration: none;
     border-bottom: 2px dashed #333;
     font-size: 18px;
     cursor: pointer;
+}
+.bg-1 .tooltip-link {
+    border-bottom: 2px dashed white;
 }
 .tooltip-link:hover {
     color: inherit;
@@ -194,6 +198,19 @@ figure {margin-top: 40px;} figcaption {margin-bottom: 40px;}
 }
 .caixa.icone::before {
     background-color: transparent;
+}
+.caixa-branca {
+    display: block;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 25px;
+    box-shadow: 3px 3px 3px #333;
+}
+.caixa-branca p {
+    font-size: 20px;
+    margin-bottom: 0;
 }
 table.sesc {
     margin: 20px auto;
@@ -337,6 +354,17 @@ span.negrito {
     left: 50%;
     transform: translateX(-50%);
     z-index: 15;
+}
+.icone.saiba-mais {width: 80%; display: block; margin: 30px auto;}
+.icone.saiba-mais::before {
+    content: '';
+    background-image: url('../design/pg3/ico_saiba_mais.png');
+    background-size: 100%;
+    width: 152px;
+    height: 152px;
+    left: -60px;
+    top: -30px;
+    position: absolute;
 }
 .renda-bg {
     background-color: #498080;
@@ -570,4 +598,25 @@ footer li.active a{
 footer a:visited {
     color: #7a7a7a;
     background-color: #c4c4c4;
+}
+p.fonte-2 {
+    font-size: 18px;
+}
+.caixa-exp h3 {
+    color: white;
+}
+.bt-info {
+    display: block;
+    padding: 25px 45px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    width: fit-content;
+    margin: 35px auto;
+    border-radius: 15px;
+}
+.bt-info:hover {
+    background-color: white;
+    color: #2d5054;
+    text-decoration: none;
 }
