@@ -606,17 +606,13 @@ p.fonte-2 {
     color: white;
 }
 .bt-info {
+    background: url('../design/pg1/btn.png') no-repeat;
+    background-size: 100%;
     display: block;
-    padding: 25px 45px;
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-    width: fit-content;
-    margin: 35px auto;
-    border-radius: 15px;
+    border: none;
+    width: 185px;
+    height: 156px;
+    margin: 30px auto;
+    transition: all 0.2s;
 }
-.bt-info:hover {
-    background-color: white;
-    color: #2d5054;
-    text-decoration: none;
-}
+.bt-info:hover {background-image: url('../design/pg1/btn_hover.png');}
