@@ -303,7 +303,7 @@ body {
 }
 
 .h2Gay {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     padding: 0%;
     color: var(--cor-fundo);
@@ -492,8 +492,8 @@ body {
 }
 
 .play.position-absolute.play6.pauseSmart {
-    top: 10px;
-    left: 10px;
+	top: 5px;
+	left: 3px;
 }
 
 .h2GaySmart {
