@@ -318,13 +318,16 @@ body {
     color: var(--cor-fundo);
 }
 
-.homens {
-    padding: 19px;
-    padding-inline: 25px;
+.row.text-center {
+	width: 399px;
 }
 
 .mulheres {
-    padding: 30px;
+	padding-inline: 15px;
+}
+
+.homens {
+	padding-inline: 15px;
 }
 
 /********************************************************************/
